@@ -1,7 +1,10 @@
 REM Division by repeated Subtraction
+CLS
+PRINT "Division by repeated Subtraction."
 Start:
-INPUT "A",A
-INPUT "B",B
+PRINT "Input a fraction in the form of A/B."
+INPUT "A: ",A
+INPUT "B: ",B
 X=A
 Z=0
 IF B=0 THEN GOTO zerodivtrap
@@ -23,13 +26,13 @@ GOTO Ask
 zerodivtrap:
 PRINT "You can't divide by 0, idiot!"
 PRINT "No you can't!"
-INPUT "Do it anyway?  Y/N",Y$
+INPUT "Do it anyway?  Y/N: ",Y$
 IF Y$= "Y" THEN GOTO Calculate
 IF Y$= "N" THEN GOTO Ask
 GOTO zerodivtrap
 
 Ask:
-INPUT "Go again?  Y/N",Y$
+INPUT "Go again?  Y/N: ",Y$
 IF Y$="Y" THEN GOTO Start
 IF Y$="N" THEN END
 GOTO Ask
