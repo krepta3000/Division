@@ -1,4 +1,4 @@
-REM Start of BASIC! Program
+REM Division by repeated Subtraction
 Start:
 INPUT "A",A
 INPUT "B",B
